@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Poppins", "sans-serif";
+  --breakpoint-3xl: 1920px;
+  --color-primary: #875cf5;
+
+  --color-clay-bg: #eef0f6;
+  --color-clay-surface: #f4f6fb;
+
+  --shadow-clay: 8px 8px 16px #d1d4e0, -8px -8px 16px #ffffff;
+  --shadow-clay-sm: 4px 4px 8px #d1d4e0, -4px -4px 8px #ffffff;
+  --shadow-clay-inset: inset 4px 4px 8px #d1d4e0, inset -4px -4px 8px #ffffff;
+  --shadow-clay-primary: 6px 6px 14px #6a46c9, -6px -6px 14px #a97dff;
+
+  --radius-clay: 28px;
+  --radius-clay-sm: 18px;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-display);
+  }
+
+  body {
+    background-color: var(--color-clay-bg);
+    overflow-x: hidden;
+  }
+}
+
+.input-box {
+  @apply w-full flex justify-between gap-3 text-sm text-black bg-clay-surface rounded-clay-sm px-4 py-3 mb-4 mt-3 shadow-clay-inset outline-none;
+}
+
+
